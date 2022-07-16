@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+
+        :root
+        {
+            --background-color:rgb(241, 22, 6);
+        }
+
+        @keyframes ping-pong {
+            0%
+            {
+                
+                background-color: rgb(255, 145, 0);
+            }
+            10%
+            {
+                
+                transform: translate(525px ,50px);
+                background-color: rgb(255, 251, 0);
+            }
+            20%
+            {
+                
+                
+                background-color: rgb(98, 255, 0);
+                transform: translate(0px, 100px);
+            }
+            30%
+            {
+                transform: translate(525px, 150px);
+                background-color: rgb(4, 255, 134);
+                
+            }
+            40%
+            {
+                
+                transform: translate(0px, 200px);
+                background-color: rgb(0, 255, 217);
+            }
+            50%
+            {
+                transform: translate(525px, 250px);
+                background-color: rgb(0, 128, 255);
+                
+            }
+            
+            60%
+            {
+                transform: translate(0px, 300px);
+                background-color: rgb(98, 0, 255);
+                
+            }
+            70%
+            {
+                transform: translate(525px, 350px);
+                background-color: rgb(195, 0, 255);
+                
+            }
+            
+            
+            80%
+            {
+                transform: translate(0px, 400px);
+                background-color: rgb(255, 0, 212);
+                
+                
+            }
+            90%
+            {
+                transform: translate(525px, 450px);
+                background-color: rgb(255, 0, 68);
+                
+            }
+            
+            
+            100%
+            {
+                transform: translate(0px, 600px);
+                background-color: rgba(255, 0, 0, 0.085);
+                
+            }
+
+
+
+
+
+        }
+
+
+       
+       fieldset
+       {
+
+        width: 600px;
+        height :700px;
+        
+        
+       }
+       
+       
+       .ball
+        {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: relative;
+            right: 12px;
+            transition: transform 1s;
+            animation: ping-pong 7s linear 0.1s 5;
+
+        }
+        
+        
+       
+
+
+    </style>
+    
+    
+    <title>Ping Pong Ball</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Ping-Pong ball</legend>
+
+        <div class="ball"></div>
+
+    </fieldset>
+</body>
+</html>
