@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      fieldset {
+        height: 250px;
+      }
+
+      .bat {
+        width: 160px;
+        height: 260px;
+        transition: transform 1s ease-in;
+      }
+      fieldset:hover .bat {
+        transform: rotate(-65deg);
+        transform-origin: top right;
+      }
+      fieldset:hover .ball {
+        transform: translate(250px, -220px);
+      }
+
+      .ball {
+        background-color: red;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        transition: 100;
+        position: relative;
+        left: 310px;
+        bottom: 55px;
+        transition: transform 1.5s 1s ease-out;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is bat and Ball Section</h1>
+
+    <fieldset>
+      <legend>This is Bat And Ball Section</legend>
+
+      <img class="bat" src="./bat.jpg" alt="" />
+
+      <div class="ball"></div>
+    </fieldset>
+  </body>
+</html>
